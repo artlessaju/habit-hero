@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+textblob
+passlib
+bcrypt==3.2.2

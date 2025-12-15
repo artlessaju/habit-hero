@@ -1,0 +1,62 @@
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */ /* Optional: add a dark background for contrast */
+  }
+  
+  .card {
+    background-color: #3884e1; /* Card background color */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Initial glow */
+    transition: box-shadow 0.3s ease-in-out;
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px rgba(11, 124, 230, 0.4), 0 0 20px rgba(11, 124, 230, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(11, 124, 230, 0.4), 0 0 40px rgba(11, 124, 230, 0.4);
+    }
+  }
+  
+  .tracking-in-expand-fwd {
+    -webkit-animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  }
+  
+  /* Animation keyframes for text */
+  @-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
